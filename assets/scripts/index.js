@@ -23,6 +23,9 @@ uncookie_button.addEventListener("click", function () {
         if (cookieAdjective.includes("publicit")) {
             newCheckbox.disabled = true;
         }
+        else if (cookieAdjective.includes("ames")) {
+            newCheckbox.disabled = true;
+}
         personalize_cookies.appendChild(newCheckbox);
         personalize_cookies.appendChild(newLabel);
         personalize_cookies.appendChild(newDiv);
