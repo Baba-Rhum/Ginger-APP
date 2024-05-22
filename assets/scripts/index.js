@@ -78,4 +78,7 @@ uncookie_button.addEventListener("click", function () {
 if (localStorage.getItem("cookie") === "true") {
     document.getElementById("cookie-consent").remove();
 }
-
+cookie_button.addEventListener("click", function () {
+    document.getElementById("cookie-consent").style.display = "none";
+    localStorage.setItem("cookie", "true");
+});
